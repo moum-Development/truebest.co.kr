@@ -14,6 +14,8 @@ header .inner{height: 100px; display: flex; justify-content: space-between; alig
 header .logo a{display: flex; align-items: center;}
 header .logo span{display: block; font-weight: 600; color: #333; margin-left: 10px; }
 header .logo img{height: 20px;}
+header .logo .sub-logo{font-size: .75rem; text-align: center; line-height: 1.4; color: #222;}
+header .logo .sub-logo span{margin-top: 10px;}
 header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; border-radius: 20px; font-weight: 900; cursor: pointer;}
 
 #wrap{display: flex; width: 100%;}

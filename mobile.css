@@ -13,6 +13,7 @@
     header .logo a img{height: 20px; margin-bottom: 5px;}
     header .logo span{font-size: .7rem !important;}
     header .logo span small{display: block; margin-top: 5px;}
+
     header .call-number{width: 140px !important; font-size: .7rem; text-align: center; padding: 7px 20px;}
 
     #wrap{display: block; width: 100% !important; height: 1500px; margin: 0 auto; justify-content: center;}
