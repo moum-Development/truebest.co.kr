@@ -1,22 +1,3 @@
-<?
-$num= isset($num)?$num:"";
-$_REQUEST["code"]= isset($_REQUEST["code"])?$_REQUEST["code"]:"";
-
-$num = $_REQUEST["code"];
-if ($num == "") {
-	$_COOKIE["num"]= isset($_COOKIE["num"])?$_COOKIE["num"]:"";
-	$num = $_COOKIE["num"];
-} else {
-	setcookie("num", $num, "", "");
-}
-
-if($num=="hanmidm"){
-	$reco = "●한믿음";
-}else{
-	$reco = "●한투";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -118,12 +99,12 @@ if($num=="hanmidm"){
 
     <div class="bottomFixedForm">
                 <form name="festimate" method="post" autocomplete="off" enctype="multipart/form-data">
-					<input type="hidden" name="ips" value="<?=$_SERVER["REMOTE_ADDR"];?>">
-					<input type="hidden" name="site_name" value="<?=$_SERVER['HTTP_HOST'];?>">
-					<input type="hidden" name="path" value="1">
-					<input type="hidden" name="reco" value="<?=$reco?>">
-					<input type="hidden" name="num" value="<?=$num?>">
-					<input type="hidden" name="phone" value="">
+							<input type="hidden" name="ips" value="100.100.100.100">
+							<input type="hidden" name="site_name" value="truebest.co.kr">
+							<input type="hidden" name="path" value="1">
+							<input type="hidden" name="reco" value="●한투">
+							<input type="hidden" name="num" value="">
+							<input type="hidden" name="phone" value="">
 
                     <div class="title">
                     <i class="ri-customer-service-2-fill"></i> <strong>상담신청</strong>
