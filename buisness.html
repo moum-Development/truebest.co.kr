@@ -1,22 +1,3 @@
-<?
-$num= isset($num)?$num:"";
-$_REQUEST["code"]= isset($_REQUEST["code"])?$_REQUEST["code"]:"";
-
-$num = $_REQUEST["code"];
-if ($num == "") {
-	$_COOKIE["num"]= isset($_COOKIE["num"])?$_COOKIE["num"]:"";
-	$num = $_COOKIE["num"];
-} else {
-	setcookie("num", $num, "", "");
-}
-
-if($num=="hanmidm"){
-	$reco = "●한믿음";
-}else{
-	$reco = "●한투";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="ko">
     <head>
