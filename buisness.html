@@ -1,0 +1,413 @@
+<?
+$num= isset($num)?$num:"";
+$_REQUEST["code"]= isset($_REQUEST["code"])?$_REQUEST["code"]:"";
+
+$num = $_REQUEST["code"];
+if ($num == "") {
+	$_COOKIE["num"]= isset($_COOKIE["num"])?$_COOKIE["num"]:"";
+	$num = $_COOKIE["num"];
+} else {
+	setcookie("num", $num, "", "");
+}
+
+if($num=="hanmidm"){
+	$reco = "●한믿음";
+}else{
+	$reco = "●한투";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+
+    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
+    <script type="text/javascript">
+        kakaoPixel('5896382390319006938').pageView();
+    </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>한국투자저축은행 대출모집법인::베스트씨에스</title>
+    
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    
+        <!-- GSAP -->
+        <!-- gsap js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollToPlugin.min.js" integrity="sha512-2HGad6YO+ZvUnQCeKmCnUIXSDExbaaVKDqcl0n+N4JRc1TrrzyLm5/Etz/t9Ov7pnjuikiAn6VqmJJWM0WLkUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <link rel="stylesheet" href="font/font.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="/sub-style.css">
+        <link rel="stylesheet" href="/mobile.css">
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="/common.js"></script>
+    </head>
+<body>
+
+
+
+    <header>
+        <div class="inner">
+            <div class="logo">
+                    <a href="index.html">
+                        <img src="images/header_logo.svg" alt="대출모집법인 베스트씨에스">
+                        <span>대출모집법인 베스트씨에스 <small>박정훈 상담사 20-00000114</small></span>
+                    </a>
+            </div>
+
+            <ul class="menu">
+                <!-- <li><a href="/sub-page1.php">살만한대환대출</a></li> -->
+                <li><a href="apartment.html">사업자아파트담보대출</a></li>
+                <li><a href="buisness.html">살만한직장인대출</a></li>
+            </ul>
+
+            <div class="call-number">
+                <i class="ri-phone-fill"></i> 02-1644-4517
+            </div>
+        </div>
+
+    </header>
+
+    <div id="pop">
+    <div class="txt">개인정보의수집 이용 제공동의 처리방침안내<br />
+        <br />
+        개인정보 처리방침<br />
+        한국투자저축은행 대출모집법인 ㈜ 베스트씨에스(상담사)(이하”회사”)와 고객님과 대출 상담을 위해 고객님의 개인정보를 수집 , 이용하거나 제 3자에게 제공하고자하는 경우에는 [개인정보 보호법] 제 15조 1항 제1호, 제17조 제1항 제1호,제24조 제1항 제1호에 따라 고객님의 동의를 얻어야 합니다. 이에 회사가 아래의 내용과 같이 고객님의 개인정보를 수집 이용 또는 제공하는것에 동의합니다.
+        <br /><br>
+        수집, 이용 목적
+        <br />
+        ▣ 대출상담 및 해당 금융사에 시스템(Admin)을 통해 대출 신청 <br>
+        ▣ 상품 및 서비스 홍보 <br>
+        ▣ 로그분석 및 마케팅 통계에 활용
+        <br><br>
+        수집, 이용할 항목 <br>
+        ▣ 필수개인정보항목: - 이름/ 생년월일(남,여), 통신사, 휴대폰번호 <br>
+        ▣ 선택수집항목 : - 부동산 정보, 소득정보, 대출필요금액, 보유대출금액, 대출상담에 목적에관한정보
+        <br><br>
+        수집 방법 <br>
+        ▣ 홈페이지 온라인 상담신청 및 전화상담 신청
+        <br><br>
+        제공받는 자 <br>
+        : 한국투자저축은행 대출모집법인 ㈜ 베스트씨에스(상담사)
+        <br><br>
+        보유, 이용 기간 <br>
+        원칙적으로, 개인정보 수집 및 이용목적이 달성한 후에는 해당 정보를 지체 없이 파기합니다. 다만, 상법,전자상거래 등에서의 소비자보호에 관한 법률 등 관련 법령의 규정에 의하여 보존할 필요성이 있는 경우에는 아래와 같이 고객의 개인정보를 보관할 수 있습니다. 이경우 개인정보는 보관의 목적으로만 관리 됩니다. <br>
+        보존항목 : 이름,휴대폰번호, <br>
+        보존근거 : 서비스 이용의 혼선 방진, 불법적 사용자에 대한 관련 기관 수사협조 <br>
+        보존기간 : 1개월 이후 즉시 파기
+        <br><br>
+        동의를 거부할 권리 및 동의를 거부할 경우의 불이익 <br>
+        : 위 개인정보의 수집.이용에 대한 동의를 거부할 수 있으며, 동의 후에도 언제든지 철회 가능합니다. 동의하지 않은 수집 이용 목적과 관련된 상품 및 서비스 안내 등의 편의는 제공받을 수 없습니다.
+    </div>
+</div>
+
+    <div class="bottomFixedForm">
+                <form name="festimate" method="post" autocomplete="off" enctype="multipart/form-data">
+					<input type="hidden" name="ips" value="">
+					<input type="hidden" name="site_name" value="<?=$_SERVER['HTTP_HOST'];?>">
+					<input type="hidden" name="path" value="1">
+					<input type="hidden" name="reco" value="<?=$reco?>">
+					<input type="hidden" name="num" value="<?=$num?>">
+					<input type="hidden" name="phone" value="">
+
+                    <div class="title">
+                    <i class="ri-customer-service-2-fill"></i> <strong>상담신청</strong>
+                        <span>신용점수에 반영이 안 되는 안심한도조회 (24시간 상담 가능)</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="name" placeholder="이름">
+                        <input type="number" placeholder="연락처" name="tel" id="tel" class="numberOnly" minlength="11" maxlength="11" required oninput="maxLengthCheck(this)">
+                        <button id="fsubmit" class="btn eveSubmitBtn">상담신청</button>
+                    </div>
+
+                    <div class="check"><input name="policy" type="checkbox">개인정보 수집·이용·제공 동의 <span class="privacy">자세히보기</span></div>
+
+                </form>
+        </div><!-- bottomFixedForm -->
+
+    <section class="credit01">
+
+
+        <div class="inner">
+
+            
+            <div class="title">
+                <div class="txtBox">
+                    <div class="main-txt">사업자 아파트 담보 대출</div>
+                    <div class="sub-txt">아파트를 담보로 별도의 감정평가없이 <br>
+                        KB(국민은행) 일반시세를 기준으로 (층별상이) 대출 가능! <br>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="/images/apartment.png" alt="사업자 아파트 담보 대출">
+                </div>
+            </div>
+
+            <div class="productInfo">
+
+                <div class="title">상품안내</div>
+
+                <div class="infoBox">
+
+
+                    <div class="infoList">
+                        <div class="sub-title">
+                            <i class="fa-regular fa-user"></i> 대상 고객
+                        </div>
+
+                        <div class="info">
+                            개인사업자, 법인<br>
+                            (부동산 임대업·매매업, 건설업 제외)<br>
+                            NICE 신용평점 710점 이상, 소득증빙 가능자
+                        </div>
+                    </div>
+
+                    <div class="infoList">
+                        <div class="sub-title">
+                            <i class="fa-solid fa-money-bill-trend-up"></i> 대출 금리
+                        </div>
+
+                        <div class="info">
+                            연 7.0%~연14.80%
+                        </div>
+                    </div>
+
+                    <div class="infoList">
+                        <div class="sub-title">
+                            <i class="fa-solid fa-calendar-days"></i> 대출 기간
+                        </div>
+
+                        <div class="info">
+                            12개월 이내 (최대 60개월)
+                        </div>
+                    </div>
+
+                </div><!-- infoBox -->
+
+                
+
+
+            </div><!-- productInfo -->
+
+            <div class="more-info">
+
+                <table>
+
+                    <tbody>
+
+                        <tr>
+                            <th>대출한도</th>
+                            <td>KB 일반시세의 최고 85% (층, 면적 별 상이)</td>
+                        </tr>
+                        <tr>
+                            <th>준비 서류</th>
+                            <td>사업자등록증, 소득증빙자료, 신분증,기타 대출상담시 필요 서류</td>
+                        </tr>
+                        <tr>
+                            <th>부대비용</th>
+                            <td>근저당권 관련 비용(국민주택채권매입비, 말소비용)</td>
+                        </tr>
+                        <tr>
+                            <th>이자부과시기</th>
+                            <td>매월(대출해당일 또는 응당일부과)</td>
+                        </tr>
+                        <tr>
+                            <th>연체금리</th>
+                            <td>
+                                -연체시: 약정이자 + 연 3% <br>
+                                *연체이자율 상한: 법정최고금리 연 20% 이내
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>대출기한전 <br>상환수수료</th>
+                            <td>
+                                상환금액의 2% 이내<br>
+                                (최초 대출취급일로부터 3년 이후 기한전상환수수료 면제)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>대출기한전 상환수수료 <br> 산정방법</th>
+                            <td>
+                                기한전상환대출금액 x 기한전상환수수료율 x 대출잔여일수/대출약정기간
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>인지비용부담</th>
+                            <td>
+                                - 대출금 5천만원까지는 수입인지 비용이 없으며, <br>
+                                5천만원 초과시 대출 금액별 수입인지 비용 차등 부과<br>
+                                - 수입인지 비용은 각50%씩 고객과 저축은행이 부담
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>상환 방식</th>
+                            <td>만기일시상환(매월이자납입), 종합통장대출(한도거래)</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="notice">
+
+                <div class="title">유의사항<i class="fa-solid fa-caret-down"></i></div>
+
+                <div class="noticeList">
+
+                    <ul>
+                        <li>▪ 저축은행 심사기준과 고객 신용도에 따라 대출여부가 결정됩니다.</li>
+                        <li>▪ 대출금리는 금융당국 기준금리 변동 또는 신용등급과 심사결과에 따라 변경될 수 있습니다.</li>
+                        <li>▪ 기간 연장시점에 고객 신용도 등의 변동이 있는 경우 대출금의 일부 또는 전부가 회수될 수 있습니다.</li>
+                        <li>▪ 대출금의 상환 또는 이자납입이 지연될 경우 연체이자율이 적용되며 예금 등 기타채권과의 상계나 법적 절차 등으로 재산상의 불이익을 당하실 수 있습니다.</li>
+                        <li>▪ 과도한 대출은 개인신용평점 하락의 원인이 될 수 있습니다.</li>
+                        <li>▪ 개인신용평점 하락으로 금융거래의 제약 또는 불이익이 발생할 수 있습니다.</li>
+                        <li>▪ 연체 시 계약기간 만료 전 원리금 변제의무가 발생할 수 있습니다.</li>
+                        <li>▪ 계약 체결 전 상품설명서 및 약관을 확인하시기 바랍니다.</li>
+                        <li>▪ 해당 상품에 대해 충분한 사전 설명을 받을 권리가 있으며, 설명을 이해한 후 거래하시기 바랍니다.</li>
+                        <li>▪ 기타 자세한 내용은 (대표전화번호 ☎ 02-1644-4517)로 문의해주시기 바랍니다.</li>
+                        <li>※금융소비자는 방문판매 목적으로 방문 또는 전화 연락하는 것을 금지하도록 연락금지요구권을 행사할 수 있습니다. <br>
+                            □ 행사 방법: (주)베스트씨에스 대표번호: 02-1644-4517
+                         </li>
+                        <br><br>
+
+                        <li>
+                            ※대출과 관련하여 대출모집인 등이 고객으로부터 어떠한 명목(수수료, 컨설팅비 등) 이건 금전을 받는 것은 불법이며, 만일 금전을 지급한 경우에는 금융감독원 등에 신고하여 피해를 구제받기 바랍니다. <br>
+                            (금융감독원 신고센터 : ☎ 02-3145-8529 / 콜센터 : ☎ 1332)
+                        </li>
+                        <br><br>
+
+                        <li>※금융소비자의 권리 안내</li>
+                        <li>▪ 일반금융소비자는 계약체결일,계약서류를 받은 날, 대출금 수령일로부터 14일 내에 계약에 대한 청약을 철회할 수 있습니다.
+                            다만, 철회권을 행사하여 효력이 발생한 이후에는 이를 취소할 수 없습니다.
+                        </li>
+                        <li>▪ 금융회사가 '금융소비자 보호에 관한 법률' 상 다음의 의무를 위반하여 대출계약을 체결한 경우, 금융소비자는 해당 계약을 위약금 등 수수료 부과없이 해지할 수 있습니다. <br>
+                            금융소비자는 위반사실을 안날로부터 1년 이내의 기간으로 계약체결일로부터 5년이내에 계약해지 요구서에 서류 첨부하여 서면등으로 계약의 해지를 요구하여야 합니다.
+                        </li>
+                        <li>▪ 금융소비자는 소득·재산 증가, 신용도 상승, 재무상태 개선, 기타 등으로 본인의 신용상태가 개선되었다고 판단되는 경우 저축은행에 자신이 적용받는 금리인하를 요구할 수 있는 권리가 있습니다. <br>
+                            다만, 관련절차 및 내규에 따라 금리인하가 되지 않을 수 있습니다.
+                        </li>
+                        <li>▪ 금융소비자는 분쟁조정 또는 소송 등 권리구제를 위한 목적으로 저축은행이 기록 및 유지·관리하는 자료의 열람을 요구 할 수 있습니다. <br>
+                        </li>
+                        <li>
+                            ▪ 금융소비자의 권리 안내와 관련된 자세한 내용은 (주)한국투자저축은행 홈페이지 고객센터에서 확인 가능하시니 참고하여 주시기 바랍니다.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+    
+
+            
+
+        </div><!-- inner -->
+
+
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li><span>대표번호 02-1644-4517</span></li>
+            <li>법인명: 주식회사 베스트씨에스</li>
+            <li>대표자: 한민우</li>
+            <li>사업자등록번호: 334-87-01413</li>
+            <li>주소: 부산광역시 부산진구 부전로 43, 704호</li>
+            <li>중앙회등록번호: 20-00000114</li>
+        </ul>
+        <p>
+            (주)베스트씨에스 및 소속상담사는 고객에게 별도의 수수료를 요구하거나 수취하지 않습니다. 중개수수료를 요구하거나 받는 것은 불법입니다. <br>
+            대출 이자 및 원금 연체 시 신용상 불이익이 발생할 수 있습니다. <br>
+            대출 상품 이용시 귀하의 신용등급 또는 개인신용평점이 하락할 수 있습니다. <br>
+            신용등급 또는 개인신용평점 하락으로 금융거래가 제약될 수 있습니다. 
+            <br><br>
+            박정훈 상담사는 (주)한국투자저축은행과 위탁 계얄을 체결한 (주)베스트씨에스 대출모집법인에 소속되어 있으며, 저축은행중앙회에 등록된 대출 상담사입니다. <br>
+            (주)베스트씨에스는 (주)한국투자저축은행과 대출모집위탁계약을 체결한 모집법인입니다. <br>
+            (주)베스트씨에스 및 소속상담사는 한국투자저축은행만의 대출모집업무를 수행하며, 금융상품계약 체결 권한이 없습니다. <br>
+            대출모집법인 확인방법: 대출모집법인포털사이트(https://www.loanconsultant.or.kr/), 저축은행중앙회(https://www.fsb.or.kr/) <br>
+            민원 발생 시 (주)베스트씨에스(Tel:1644-4571), (주)한국투자저축은행 민원창구(Tel:031-788-3794)로 연락 주시길 바랍니다.
+            <br><br>
+            대출계약을 위하여 고객이 제공한 신용정보 또는 개인정보 등은 금융상품직접판매업자인 (주)한국투자저축은행이 직접 보유하고 관리합니다. <br>
+            (주)베스트씨에스가 고의 또는 과실로 금융소비자보호법을 위반하여 고객에게 손해를 발생시킨 경우에는 그 손해를 배상할 책임이 있습니다. <br>
+            (주)베스트씨에스가 고의 및 과실이 없음을 입증한 경우를 제외하고 (주)베스트씨에스는 금융소비자보호법 제19조(설명의무)를 위반하여  <br>
+            고객에게 손해를 발생시킨 경우에는 그 손해를 배상한 책임을 집니다. <br>
+            (주)한국투자저축은행 금융상품직접판매업자로서, (주)베스트씨에스가 대출모집 업무를 할 때 고객에게 손해를 <br>
+            발생시킨 경우에는 그 손해를 배상할 책임이있습니다. 다만, (주)한국투자저축은행이 (주)베스트씨에스의 선임과 그 업무 감독에 대하여 적절한 주의를 하였고 손해를 <br>
+            방지하기 위하여 노력한 경우에는 그러하지 않습니다.
+            <br><br>
+            대출모집인 수수료율 확인방법 : 홈페이지 sb.koreainvestment.com 금융도우미 - 고객안내 - 대출모집인 수수료 공시 <br>
+            상호 : (주)베스트씨에스 | 대표이사 : 한민우 | 사업자등록번호 : 334-87-01413 | 대표번호 : 1644-4517 | 개인정보책임자 : 김주하 <br>
+            은행연합회 대출모집인증록번호 : 20-00000114 | 주소 : 부산광역시 부산진구 부전로 43. 704호(부전동, 서면베르빌) <br>
+            심의번호 : (주)한국투자저축은행 준법감시인 심의필
+        </p>    
+    </footer>
+</div><!-- subInfoBox -->
+
+    <script>
+
+    $(".privacy").click(function() {
+            if ($("#pop").css("display") == "none") {
+                $("#pop").show();
+                addFix();
+            } else {
+                $("#pop").hide();
+                removeFix();
+            }
+        });
+        $('#pop').click(function(e) {
+            if (!$(e.target).hasClass("txt")) {
+                $("#pop").hide();
+                removeFix();
+            }
+        });
+
+        $(function(){
+
+            $(".notice .title").click(function(){
+                $(".notice .noticeList").toggleClass('on')
+            })
+
+            
+
+        }) //
+
+        $(function(){
+        var $header = $('header'); //헤더를 변수에 넣기
+        var $page = $('.credit01 .title'); //색상이 변할 부분
+        var $window = $(window);
+        var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+        
+        $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+            pageOffsetTop = $page.offset().top;
+        });
+        
+        $window.on('scroll', function(){ //스크롤시
+            var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+            $header.toggleClass('down', scrolled); //클래스 토글
+        });
+});
+    </script>
+    
+</body>
+</html>

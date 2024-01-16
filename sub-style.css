@@ -1,0 +1,134 @@
+body{font-family: 'S-CoreDream-3Light'; background-color: #eee;}
+a{text-decoration: none; color: inherit;}
+ul, li{list-style-type: none;}
+img{display: block;}
+
+.inner{width: 1400px; margin: 0 auto; position: relative;}
+
+#pop { display:none; position:fixed; z-index:1000; background-color:rgba(0,0,0,0.7); top:0; left:0; width:100%; height:100%; text-align:center; z-index: 9999999;}
+#pop .txt { position:absolute; display:inline-block; box-sizing:border-box; padding:25px; text-align:left; overflow:scroll; left:50%; margin-left:-340px; top:50%; margin-top:-200px; width:680px; height:400px; background:#fff; border:1px solid #ddd; color: #333; font-size: 1rem; line-height: 1.4;}
+
+
+/* 상단신청폼 */
+
+.bottomFixedForm{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999999;
+    
+}
+
+.bottomFixedForm form{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 3px 3px #999;
+
+}
+
+.bottomFixedForm form .title{ margin-bottom: 10px;}
+.bottomFixedForm form .title strong{font-size: 1.5rem; color: #532f09; font-weight: 900; margin-bottom: 20px;}
+.bottomFixedForm form .title i{font-size: 1.5rem; color: #532f09;}
+.bottomFixedForm form .title span{font-weight: 600; font-size: 1.1rem; color: #555;}
+.bottomFixedForm form .inputBox{ margin-bottom: 10px;}
+.bottomFixedForm form .inputBox input{border:2px solid #d2d2d2; width: 200px; border-radius: 10px; padding: 10px;}
+.bottomFixedForm form .inputBox button{
+    margin-left: 8px;
+border: none;
+color: #fff;
+font-size: 1.2rem;
+font-family: 'S-CoreDream-3Light';
+width: 200px;
+padding: 7px;
+border-radius: 10px;
+cursor: pointer;
+background: linear-gradient( to bottom, #4c2f09, #683209 );
+}
+
+.bottomFixedForm form .check{
+    color: #333;
+    font-size: .9rem;
+}
+
+.bottomFixedForm form .check span{display: inline-block; text-decoration: underline; cursor: pointer; font-size: .9rem; font-weight: 900;}
+
+/* 상세페이지 부분 */
+
+/* HEADER */
+header{z-index: 1000; position: fixed; left: 50%; transform: translateX(-50%); width: 100%;}
+header .inner{height: 100px; display: flex; justify-content: space-between; align-items: center;}
+header .logo a{display: flex; align-items: center;}
+header .logo span{display: block; font-weight: 600; color: #333; margin-left: 10px; }
+header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; border-radius: 20px; font-weight: 900; cursor: pointer;}
+
+header  .menu{display: flex; width: 580px; justify-content: right;}
+header  .menu li{margin: 0px 10px; }
+header  .menu li a{display: block; font-weight: 600; color:#555; transition: .4s;}
+header  .menu li a:hover{color: #7e4b26;}
+
+
+
+header .mob-menu{display: none;}
+.down{background-color: rgba(255, 255, 255, 0.356);
+	-webkit-backdrop-filter: blur(3px);
+  	    backdrop-filter: blur(3px);}
+
+/* 살만한 대환대출 */
+.credit01{}
+.credit01 .inner{padding-top: 220px;}
+.credit01 .title{display: flex; align-items: center; justify-content: space-between;}
+.credit01 .title .txtBox{width: 500px;}
+.credit01 .title .txtBox .main-txt{font-size: 2.5rem; font-weight: 900; margin-bottom: 30px;}
+.credit01 .title .txtBox .sub-txt{font-weight: 500; color: #575757; font-size: 1rem; line-height: 1.4;}
+.credit01 .title .img{width: 1000px; display: flex; justify-content: center;}
+.credit01 .title img{height: 200px;}
+
+
+.productInfo{margin-top: 200px; display: flex; justify-content: center; align-items: center;}
+
+.productInfo .title{font-size: 1.5rem; font-weight: 900; width: 300px; text-align: center; box-sizing: border-box;}
+.productInfo .infoBox{background-color: #fff; width: 1000px; height: 200px; border-radius: 20px; box-shadow: 4px 4px 8px #c3c3c3; display: flex; justify-content: center; align-items: center;}
+.productInfo .infoBox .infoList{margin: 0 50px; text-align: left;}
+.productInfo .infoBox .infoList .sub-title{margin-bottom: 20px}
+.productInfo .infoBox .infoList .info{line-height: 1.7; color: #686868; font-weight: 600; font-size: .9rem;}
+
+.more-info{
+    border-top: 2px solid #c2c2cc;
+    padding-top: 50px;
+    margin: 100px 0;
+    width: 1000px;
+    height: 600px;
+    float: right;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.more-info table{width: 100%;}
+.more-info table tr{font-size: .95rem; color: #505050; font-weight: 600;}
+.more-info table tr th{width: 50%; line-height: 1.4;}
+.more-info table tr td{width: 50%; padding: 20px 0; line-height: 1.4;}
+
+
+/* 유의사항 */
+.notice{clear: both; padding: 70px 0; }
+.notice .title{font-size: 1.5rem; font-weight: 900; width: 300px; text-align: center; display: flex; justify-content: center; cursor: pointer;}
+.notice .title i{margin-left: 10px;}
+.notice .noticeList{display: none; width: 1600px;}
+.notice .noticeList.on{display: block;}
+.notice .noticeList ul{padding: 50px 0 0 80px;}
+.notice .noticeList ul li{font-size: .9rem; color: #505050; font-weight: 600; line-height: 2;}
+
+
+
+.footer{width: 1400px; margin: 0 auto;  border-top: 2px solid #c2c2cc; padding: 20px 0 230px 0;}
+.footer ul{display: flex; padding: 20px;align-items: center; justify-content: space-between;}
+.footer ul li{font-size: .9rem; color: #7f7f7f ; font-weight: 600;}
+.footer ul li span{font-size: 1.2rem; font-weight: 900; margin-right: 20px; color: #333;}
+
+.footer p{font-size: .8rem; line-height: 1.6; padding: 20px; color: #555;}

@@ -1,0 +1,156 @@
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:320px) and (max-width:767px) {
+
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    body{overflow-y: auto; background-color: #eee; overflow-x: hidden;}
+
+    header{width: 100% !important; position: absolute;}
+    header .inner{justify-content: left; height: 70px;  overflow: hidden; padding: 10px !important; width: 100%; }
+    header .logo{width: 200px !important; padding-top: 10px;}
+    header .logo a{flex-wrap: wrap;}
+    header .logo a img{height: 20px; margin-bottom: 5px;}
+    header .logo span{font-size: .7rem !important;}
+    header .logo span small{display: block; margin-top: 5px;}
+    header .call-number{width: 140px !important; font-size: .7rem; text-align: center; padding: 7px 20px;}
+
+    #wrap{display: block; width: 100% !important; height: 1500px; margin: 0 auto; justify-content: center;}
+    #main-wrap{display: block !important; width: 100% !important;}
+
+    .main-slide{width: 100% !important; border-radius: 0; height: 550px;}
+    .main-slide .swiper-slide .title{padding-left: 20px; width: 300px;}
+    .main-slide .swiper-slide .title .sub-txt{font-size: 1rem;}
+    .main-slide .swiper-slide .title .main-txt{font-size: 1.5rem; font-weight: 900; display: block;}
+    .main-slide .swiper-slide .hastag{margin: 20px 0}
+    .main-slide .swiper-slide .hastag span{display: inline-block; background-color: #fff; border-radius: 30px; margin: 5px; padding: 5px 10px; font-weight: 900; font-size: .8rem;}
+    .main-slide .swiper-slide .sub-title{padding-left: 10px; font-weight: 900; font-size: .9rem; line-height: 2; }
+    .main-slide .swiper-slide img{position: absolute; height: 150px;}
+    .main-slide .swiper-slide.apartment img{right: 50px; bottom: 30px;}
+    .main-slide .swiper-slide.job img{right: 20px; bottom: 30px;}
+
+    .arrow{display: none;}
+
+    .mainSubContent{display: none;}
+
+
+    .mob-subList{display: block}
+
+    .main-footer{}
+
+    #pop { display:none; position:fixed; z-index:1000; background-color:rgba(0,0,0,0.7); top:0; left:0; width:100%; height:100%; text-align:center; z-index: 9999999;}
+    #pop .txt { position:absolute; display:inline-block; box-sizing:border-box; padding:25px; text-align:left; overflow:scroll; left:50%; margin-left:-160px; top:50%; margin-top:-200px; width:80%; height:400px; background:#fff; border:1px solid #ddd; color: #333; font-size: 1rem; line-height: 1.4;}
+
+
+
+
+
+    .mob-footer{display: block; padding-bottom: 190px; background-color: #f7f7f7}
+    .mob-footer ul{padding: 50px;}
+    .mob-footer ul li{line-height: 2; font-size: .8rem;}
+    .mob-footer p{
+        padding: 20px;
+        font-size: .7rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .sub-wrap{display: none;}
+    .main-footer{display: none;}
+
+
+    .mob-content{width: 100%; display: block;}
+    .mob-content .proList{width: 100% !important; height: 150px; background-color: #fff; display: flex; justify-content: center;}
+    .mob-content .proList a{border-right: 1px solid #eee;}
+    .mob-content .proList a:last-child{border-right: none;}
+    .mob-content .proList .content{padding: 20px; position: relative; height: 150px; width: 200px;}
+    .mob-content .proList .content .title{}
+    .mob-content .proList .content img{height: 60px; position: absolute; right: 20px;bottom: 10px;}
+
+    .mob-content .more-box{width: 100%;}
+    .mob-content .more-box .more{width: 100%; height: 300px; padding: 30px;}
+    .mob-content .more-box .more:nth-child(1){background-color: rgb(216, 245, 255);}
+    .mob-content .more-box .more:nth-child(2){background-color: rgb(247, 216, 255);}
+    .mob-content .more-box .more .title{width: 100%; text-align: center; font-size: 1.1rem; font-weight: 900; padding-top: 40px; line-height: 1.5;}
+    .mob-content .more-box .more .title span{display: block; margin-top: 5px; color: #575757; font-size: .9rem;}
+    .mob-content .more-box .more img{height: 70px; display: block; margin: 50px auto;}
+    .mob-content .more-box .more img.cash{height: 90px; margin-top: -10px;}
+
+
+    .mob-footer{}
+    .mob-footer ul{}
+    
+    .mob-footer ul li{}
+    .mob-footer ul li span{font-weight: 900; font-size: 1.1rem;}
+
+    /* 서브페이지 */
+
+    header{width: 100% !important; position: absolute;}
+    header .inner{justify-content: space-between; height: 70px;  overflow: hidden; padding: 0px 10px !important; width: 90%;}
+    header .logo{width: 210px;}
+    header .logo a{ flex-wrap: wrap;}
+    header .logo a img{height: 20px; margin-bottom: 5px;}
+    header .logo span{font-size: .7rem !important;}
+    header .call-number{width: 110px; font-size: .7rem; text-align: center; padding: 7px 10px;}
+    header .menu{display: none;}
+
+
+    .credit01{width: 100%; background-color: #eee; }
+    .credit01 .inner{width: 100%; padding-top: 300px;}
+    .credit01 .title {padding: 30px; display: block;}
+    .credit01 .title .txtBox{width: 100%;}
+    .credit01 .title .txtBox .main-txt{font-size: 1.3rem; margin-bottom: 10px;}
+    .credit01 .title .txtBox .sub-txt{font-size: .8rem; color: #646464;}
+    .credit01 .title .img{width: 200px;}
+    .credit01 .title img{height: 150px; position: absolute; left: 30px; top: 150px;}
+
+    .productInfo{display: block; margin-top: 100px;}
+    .productInfo .title{text-align: center; margin: 0 auto; font-size: 1.1rem;}
+    .productInfo .infoBox{width: 90%; margin: 0 auto; height: 400px;   flex-wrap: wrap;}
+    .productInfo .infoBox .infoList{width: 100%; text-align: center;}
+    .more-info{float: none !important; width: 90% !important; height: 500px; margin: 0 auto; display: block; justify-content: center; margin-top: 50px; padding-top: 20px;}
+    .more-info table{width: 100%;}
+    .more-info table tr{font-size: .65rem; color: #505050; font-weight: 600;}
+    .more-info table tr th{width: 40%; line-height: 5; font-weight: 900; line-height: 1.4; padding: 20px 0;}
+    .more-info table tr td{width: 60%; line-height: 1.4;}
+
+    
+    .notice{margin-top: 50px;}
+    .notice .title{font-size: 1rem; margin: 0 auto; display: block; padding: 30px 0; margin-top: 100px;}
+    .notice .noticeList{width: 100%;}
+    .notice .noticeList ul{padding: 20px; width: 100%; box-sizing: border-box;}
+    .notice .noticeList ul li{font-size: .6rem !important; color: #888;}
+
+    .footer{width: 95%; margin: 0 auto; box-sizing: border-box; padding: 15px; padding-bottom: 200px;}
+    .footer ul{flex-wrap: wrap;}
+    .footer ul li{line-height: 1.7; font-size: .7rem !important; width: 100%;}
+    .footer ul li span{margin-right: 0; margin-bottom: 20px; display: block;}
+    .footer p{font-size: .6rem !important;}
+
+    .bottomFixedForm{position: fixed; left: 0;bottom: 0; width: 100%;}
+    .bottomFixedForm form{width: 100%; border-radius: 0 ; padding: 20px;}
+    .bottomFixedForm form .title{margin-bottom: 15px; }
+    .bottomFixedForm form .title strong{font-size: 1.1rem; display: inline-block; margin-bottom: 5px;}
+    .bottomFixedForm form .title i{font-size: 1.1rem;}
+    .bottomFixedForm form .title span{display: block; font-size: .7rem;}
+    .bottomFixedForm form .inputBox{}
+    .bottomFixedForm form .inputBox input{margin: 3px 0; width: 100px;}
+    .bottomFixedForm form .inputBox button{width: 100px;}
+    .bottomFixedForm form .check{font-size: .8rem; display: flex; align-items: center; justify-content: center;}
+    .bottomFixedForm form .check input{margin-right: 5px;}
+    .bottomFixedForm form .inputBox button{font-size: 1rem; margin-left: 0; padding: 10px;}
+    .bottomFixedForm form .check span{display: inline-block; text-decoration: underline; margin-left: 5px; font-size: .8rem;}
+
+
+
+} /* 모바일 */
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1024px)*/ 
+@media all and (min-width:768px) and (max-width:1024px) {
+
+
+} /* 테블릿 */
+
+
+
