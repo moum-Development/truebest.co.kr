@@ -13,6 +13,7 @@ header{z-index: 1000; position: fixed; left: 50%; transform: translateX(-50%);}
 header .inner{height: 100px; display: flex; justify-content: space-between; align-items: center;}
 header .logo a{display: flex; align-items: center;}
 header .logo span{display: block; font-weight: 600; color: #333; margin-left: 10px; }
+header .logo img{height: 20px;}
 header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; border-radius: 20px; font-weight: 900; cursor: pointer;}
 
 #wrap{display: flex; width: 100%;}
