@@ -21,15 +21,32 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 	}
 
 	$.ajax({
-			type: "post",
-			url: "https://moum-on.co.kr/inst_in/inst_in_truebest_co_kr_oneWay.asp",
-			data: $form.serialize(),
-			dataType: 'html',
-			contentType: 'application/x-www-form-urlencoded; charset=UTF-8', 
-			complete: function (xhr, status) {
-				location.href = 'done.html';
+		type: 'post',
+		url: 'https://moum-on.co.kr/inst_in/inst_in_truebest_co_kr_oneWay.asp',
+		data: $form.serialize(),
+		dataType: 'html',
+		success: function (e) {
+			var chk = e;
+			if (chk == "상담신청완료") {
+				location.href = '/done.html';
+				return false;
+			} else if (chk == "중복접수") {
+				alert("중복접수");				
+				return false;
+			} else {
+				alert("접수실패");
+				return false;
 			}
-		});
+		},
+		error: function(response) {
+			if (response.responseJSON.message) {
+				alert(response.responseJSON.message);
+			}
+			if (response.responseJSON.inputName) {
+				$form.find('[name="' + response.responseJSON.inputName + '"]').focus();
+			}
+		},
+	});
 });
 function ajaxSend(ths) {
 	var $form = ths;
