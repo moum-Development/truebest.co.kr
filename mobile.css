@@ -6,17 +6,17 @@
 
     body{overflow-y: auto; background-color: #eee; overflow-x: hidden;}
 
-    header{height: 100px !important;}
-    header .inner{height: 100px !important;width: 100% !important; justify-content: center;}
+    header{height: 90px !important;}
+    header .inner{height: 90px !important;width: 100% !important; justify-content: center;}
     header .logo a{font-size: .8rem !important; width: 500px !important;}
-    header .logo a > span{ margin-left: -5px; display: flex !important; flex-wrap: wrap; font-size: .6rem !important;}
-    header .logo a > span small{}
+    header .logo a > span{ margin-left: -5px; display: flex !important; flex-wrap: wrap; font-size: .6rem !important; line-height: 1.3;}
+    header .logo a > span strong{width: 100%;}
     header .logo .sub-logo{display: flex; flex-wrap: wrap; width: 140px;}
     header .logo .sub-logo span{font-size: .6rem !important; margin-top: -3px;}
     header .logo .sub-logo img{height: 14px; margin-left: 10px;}
 
 
-    header .call-number{width: 140px !important; font-size: .7rem; text-align: center; padding: 7px 20px; display: none;}
+    header .call-number{width: 120px !important; font-size: .6rem; text-align: center; padding: 7px 5px; margin-right: 15px;}
 
     #wrap{display: block; width: 100% !important; height: 1500px; margin: 0 auto; justify-content: center;}
     #main-wrap{display: block !important; width: 100% !important;}
