@@ -6,15 +6,17 @@
 
     body{overflow-y: auto; background-color: #eee; overflow-x: hidden;}
 
-    header{width: 100% !important; position: absolute;}
-    header .inner{justify-content: left; height: 70px;  overflow: hidden; padding: 10px !important; width: 100%; }
-    header .logo{width: 200px !important; padding-top: 10px;}
-    header .logo a{flex-wrap: wrap;}
-    header .logo a img{height: 20px; margin-bottom: 5px;}
-    header .logo span{font-size: .7rem !important;}
-    header .logo span small{display: block; margin-top: 5px;}
+    header{height: 100px !important;}
+    header .inner{height: 100px !important;width: 100% !important; justify-content: center;}
+    header .logo a{font-size: .8rem !important; width: 500px !important;}
+    header .logo a > span{ margin-left: -15px; display: flex !important; flex-wrap: wrap; font-size: .6rem !important;}
+    header .logo a > span small{}
+    header .logo .sub-logo{display: flex; flex-wrap: wrap; width: 140px;}
+    header .logo .sub-logo span{font-size: .6rem !important; margin-top: -3px;}
+    header .logo .sub-logo img{height: 14px; margin-left: 10px;}
 
-    header .call-number{width: 140px !important; font-size: .7rem; text-align: center; padding: 7px 20px;}
+
+    header .call-number{width: 140px !important; font-size: .7rem; text-align: center; padding: 7px 20px; display: none;}
 
     #wrap{display: block; width: 100% !important; height: 1500px; margin: 0 auto; justify-content: center;}
     #main-wrap{display: block !important; width: 100% !important;}
@@ -75,7 +77,7 @@
     .mob-content .more-box .more .title{width: 100%; text-align: center; font-size: 1.1rem; font-weight: 900; padding-top: 40px; line-height: 1.5;}
     .mob-content .more-box .more .title span{display: block; margin-top: 5px; color: #575757; font-size: .9rem;}
     .mob-content .more-box .more img{height: 70px; display: block; margin: 50px auto;}
-    .mob-content .more-box .more img.cash{height: 90px; margin-top: -10px;}
+    .mob-content .more-box .more img.cash{height: 90px; margin-top: 20px;}
 
 
     .mob-footer{}
