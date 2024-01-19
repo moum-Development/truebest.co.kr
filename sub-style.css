@@ -64,7 +64,7 @@ header .logo a{display: flex; align-items: center;}
 header .logo span{display: block; font-weight: 600; color: #333; margin-left: 10px; }
 header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; border-radius: 20px; font-weight: 900; cursor: pointer;}
 
-header  .menu{display: flex; width: 700px; justify-content: right;}
+header  .menu{display: flex; width: 600px; justify-content: right;}
 header  .menu li{margin: 0px 10px; }
 header  .menu li a{display: block; font-weight: 600; color:#555; transition: .4s;}
 header  .menu li a:hover{color: #7e4b26;}

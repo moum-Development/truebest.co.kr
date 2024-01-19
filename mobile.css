@@ -7,13 +7,9 @@
     body{overflow-y: auto; background-color: #eee; overflow-x: hidden;}
 
     header{height: 90px !important;}
-    header .inner{height: 90px !important;width: 100% !important; justify-content: center;}
-    header .logo a{font-size: .8rem !important; width: 500px !important;}
-    header .logo a > span{ display: flex !important; flex-wrap: wrap; font-size: .6rem !important; line-height: 1.3;}
-    header .logo a > span strong{width: 100%;}
-    header .logo .sub-logo{display: flex; flex-wrap: wrap; width: 140px;}
-    header .logo .sub-logo span{font-size: .6rem !important; margin-top: -3px;}
-    header .logo .sub-logo img{height: 14px; margin-left: 10px;}
+    header .inner{height: 90px !important;width: 90% !important; justify-content: center;}
+    header .logo a{font-size: .6rem !important; display: flex;  align-items: center; width: 100% !important; line-height: 1.3;} 
+    header .logo a > span{ display: flex !important; flex-wrap: wrap; font-size: .7rem !important; margin-left: 0px;}
 
 
     header .call-number{width: 120px !important; font-size: .6rem; text-align: center; padding: 7px 5px; margin-right: 15px; display: none;}
@@ -66,9 +62,10 @@
     .mob-content .proList{width: 100% !important; height: 150px; background-color: #fff; display: flex; justify-content: center;}
     .mob-content .proList a{border-right: 1px solid #eee;}
     .mob-content .proList a:last-child{border-right: none;}
-    .mob-content .proList .content{padding: 20px; position: relative; height: 150px; width: 200px;}
-    .mob-content .proList .content .title{}
-    .mob-content .proList .content img{height: 60px; position: absolute; right: 20px;bottom: 10px;}
+    .mob-content .proList .content{padding: 20px; position: relative; height: 150px; width: 180px;}
+    .mob-content .proList .content .title{font-size: .9rem; width: 75%; padding-left: 10px;}
+    .mob-content .proList .content img{height: 50px; position: absolute; right: 20px;bottom: 10px;}
+    .mob-content .proList .content:last-child img{right: 40px;}
 
     .mob-content .more-box{width: 100%;}
     .mob-content .more-box .more{width: 100%; height: 300px; padding: 30px;}
