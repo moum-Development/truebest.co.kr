@@ -7,10 +7,8 @@ img{display: block;}
 
 #pop { display:none; position:fixed; z-index:1000; background-color:rgba(0,0,0,0.7); top:0; left:0; width:100%; height:100%; text-align:center; z-index: 9999999;}
 #pop .txt { position:absolute; display:inline-block; box-sizing:border-box; padding:25px; text-align:left; overflow:scroll; left:50%; margin-left:-340px; top:50%; margin-top:-200px; width:680px; height:400px; background:#fff; border:1px solid #ddd; color: #333; font-size: 1rem; line-height: 1.4;}
-header .logo img{height: 20px;}
-header .logo .sub-logo{font-size: .75rem; text-align: center; line-height: 1.4; color: #222;}
-header .logo .sub-logo span{margin-top: 10px;}
-
+header .logo a{display: flex; align-items: center; font-weight: 900; font-size: .9rem;}
+header .logo a span{font-size: 1rem; margin-left: 10px;}
 /* 상단신청폼 */
 
 .bottomFixedForm{
@@ -66,7 +64,7 @@ header .logo a{display: flex; align-items: center;}
 header .logo span{display: block; font-weight: 600; color: #333; margin-left: 10px; }
 header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; border-radius: 20px; font-weight: 900; cursor: pointer;}
 
-header  .menu{display: flex; width: 580px; justify-content: right;}
+header  .menu{display: flex; width: 700px; justify-content: right;}
 header  .menu li{margin: 0px 10px; }
 header  .menu li a{display: block; font-weight: 600; color:#555; transition: .4s;}
 header  .menu li a:hover{color: #7e4b26;}
