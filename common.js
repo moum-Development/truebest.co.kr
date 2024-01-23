@@ -58,7 +58,7 @@ function ajaxSend(ths) {
 		dataType: 'json',
 		success: function (response) {
 			console.log(response);
-			location.href = '/done.php';
+			location.href = '/done.html';
 		},
 		error: function (response) {
 			if (response.responseJSON.message) {
