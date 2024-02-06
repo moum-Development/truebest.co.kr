@@ -25,8 +25,8 @@
     .main-slide .swiper-slide .hastag span{display: inline-block; background-color: #fff; border-radius: 30px; margin: 5px; padding: 5px 10px; font-weight: 900; font-size: .8rem;}
     .main-slide .swiper-slide .sub-title{padding-left: 10px; font-weight: 900; font-size: .9rem; line-height: 2; }
     .main-slide .swiper-slide img{position: absolute; height: 150px;}
-    .main-slide .swiper-slide.apartment img{right: -90px; bottom: -160px;}
-    .main-slide .swiper-slide.job img{right: -120px; bottom: -170px;}
+    .main-slide .swiper-slide.apartment img{right: -70px; bottom: -160px;}
+    .main-slide .swiper-slide.job img{right: -100px; bottom: -170px;}
 
     .arrow{display: none;}
 
