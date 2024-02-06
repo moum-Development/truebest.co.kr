@@ -54,7 +54,8 @@ header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; 
 .bottomFixedForm form .title i{font-size: 1.5rem; color: #532f09;}
 .bottomFixedForm form .title span{font-weight: 600; font-size: .8rem; color: #555;}
 .bottomFixedForm form .inputBox{ margin-bottom: 10px;}
-.bottomFixedForm form .inputBox input{border:2px solid #d2d2d2; width: 200px; border-radius: 10px; padding: 10px;}
+.bottomFixedForm form .inputBox input{border:2px solid #d2d2d2; width: 150px; border-radius: 10px; padding: 10px;}
+.bottomFixedForm form .inputBox input.num01{width: 25px;}
 .bottomFixedForm form .inputBox button{
 margin-left: 8px;
 border: none;

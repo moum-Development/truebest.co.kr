@@ -134,8 +134,9 @@
     .bottomFixedForm form .title i{font-size: 1.1rem;}
     .bottomFixedForm form .title span{display: block; font-size: .7rem;}
     .bottomFixedForm form .inputBox{}
-    .bottomFixedForm form .inputBox input{margin: 3px 0; width: 100px;}
-    .bottomFixedForm form .inputBox button{width: 100px;}
+    .bottomFixedForm form .inputBox input{margin: 3px 0; width: 105px;}
+    .bottomFixedForm form .inputBox input.num01{width: 50px;}
+    .bottomFixedForm form .inputBox button{width: 100px; padding: 5px !important;}
     .bottomFixedForm form .check{font-size: .8rem; display: flex; align-items: center; justify-content: center;}
     .bottomFixedForm form .check input{margin-right: 5px;}
     .bottomFixedForm form .inputBox button{font-size: 1rem; margin-left: 0; padding: 10px;}
