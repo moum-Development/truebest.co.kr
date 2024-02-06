@@ -84,15 +84,15 @@ background: linear-gradient( to bottom, #4c2f09, #683209 );
 .main-slide .swiper-slide.apartment{background-color: #96deff}
 .main-slide .swiper-slide.change{background-color: #a9d2ff}
 .main-slide .swiper-slide.job{background-color: #f9ce68}
-.main-slide .swiper-slide .title{padding-top: 115px; padding-left: 250px; text-align: left; line-height: 1.4; width: 500px; display: flex; flex-wrap: wrap; justify-content: left;}
+.main-slide .swiper-slide .title{padding-top: 115px; padding-left: 250px; text-align: left; line-height: 1.4; width: 500px; display: flex; flex-wrap: wrap; justify-content: left; position: relative;}
 .main-slide .swiper-slide .title .sub-txt{font-size: 1.7rem;}
 .main-slide .swiper-slide .title .main-txt{font-size: 2.7rem; font-weight: 900;}
 .main-slide .swiper-slide .hastag{margin: 20px 0}
 .main-slide .swiper-slide .hastag span{display: inline-block; background-color: #fff; border-radius: 30px; padding: 5px 10px; font-weight: 900; font-size: 1rem;}
 .main-slide .swiper-slide .sub-title{font-weight: 900; font-size: 1.2rem; line-height: 2;}
 .main-slide .swiper-slide img{position: absolute; height: 300px;}
-.main-slide .swiper-slide.apartment img{right: 150px; bottom: 230px;}
-.main-slide .swiper-slide.job img{right: 120px; bottom: 230px;}
+.main-slide .swiper-slide.apartment img{right: -180px; bottom: -70px;}
+.main-slide .swiper-slide.job img{right: -200px; bottom: -80px;}
 
 .mainSubContent{width: 45%; height: 700px; overflow: hidden;}
 .mainSubContent .subListBox{padding: 100px 140px 0 50px;}
