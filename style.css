@@ -91,8 +91,8 @@ background: linear-gradient( to bottom, #4c2f09, #683209 );
 .main-slide .swiper-slide .hastag span{display: inline-block; background-color: #fff; border-radius: 30px; padding: 5px 10px; font-weight: 900; font-size: 1rem;}
 .main-slide .swiper-slide .sub-title{font-weight: 900; font-size: 1.2rem; line-height: 2;}
 .main-slide .swiper-slide img{position: absolute; height: 300px;}
-.main-slide .swiper-slide.apartment img{right: -180px; bottom: -70px;}
-.main-slide .swiper-slide.job img{right: -200px; bottom: -80px;}
+.main-slide .swiper-slide.apartment img{right: -180px; bottom: -70px; height: 200px;}
+.main-slide .swiper-slide.job img{right: -200px; bottom: -80px; height: 220px;}
 
 .mainSubContent{width: 45%; height: 700px; overflow: hidden;}
 .mainSubContent .subListBox{padding: 100px 140px 0 50px;}
