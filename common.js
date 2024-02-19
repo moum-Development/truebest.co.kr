@@ -12,8 +12,11 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 		alert("연락처를 입력하세요");
 		return false
 	}
-
-	var phone = $form.find('[name="tel1"]').val() + $form.find('[name="tel"]').val();
+	var phone1 = $form.find('[name="tel1"]').val();
+	var phone = $form.find('[name="tel"]').val();
+	if(phone1){
+		phone = phone1+phone;
+	}
 	$form.find('[name="phone"]').val(phone);
 
 	if ($form.find('[name="policy"]').is(":checked") == false) {
