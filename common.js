@@ -13,20 +13,12 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 		return false
 	}
 
-	if ($form.find('[name="tel"]').val() == "") {
-		alert("연락처를 입력하세요");
-		return false
-	}
-
-
 	var phone = $form.find('[name="tel"]').val();
 	$form.find('[name="phone"]').val(phone);
 
 	if ($form.find('[name="policy"]').is(":checked") == false) {
 		alert("개인정보처리방침을 동의해야 합니다.");
-		return false
-
-	
+		return false	
 	}
 
 	$.ajax({
