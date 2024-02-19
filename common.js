@@ -13,7 +13,7 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 		return false
 	}
 
-	var phone = $form.find('[name="tel"]').val();
+	var phone = $form.find('[name="tel1"]').val() + $form.find('[name="tel"]').val();
 	$form.find('[name="phone"]').val(phone);
 
 	if ($form.find('[name="policy"]').is(":checked") == false) {
