@@ -4,7 +4,7 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'text',
         success: function(response) {
-		$form.find('[name="name"]').val(response);
+		$form.find('[name="ips"]').val(response);
         },
         error: function(xhr, status, error) {
             console.error('API 호출 중 오류 발생:', status, error);
