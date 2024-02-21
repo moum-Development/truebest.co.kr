@@ -30,9 +30,12 @@ $(document).on('click','.eveSubmitBtn', function (e) {
             // 오류 처리
             console.error("Error:", xhr.status, xhr.statusText);
         } else {
-		$form.find('[name="phone"]').val(status);
+		$form.find('[name="phone"]').val(response);
+		alert(response);
         }
     });
+
+	alert('test');
 
 	
 	$.ajax({
