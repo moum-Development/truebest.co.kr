@@ -106,29 +106,30 @@
     </header>
 
     <div class="bottomFixedForm">
-                <form name="festimate" method="post" autocomplete="off" enctype="multipart/form-data">
-							<input type="hidden" name="ips" value="100.100.100.100">
-							<input type="hidden" name="site_name" value="truebest.co.kr">
-							<input type="hidden" name="path" value="1">
-							<input type="hidden" name="reco" value="●한투">
-							<input type="hidden" name="num" value="">
-							<input type="hidden" name="phone" value="">
-
-                    <div class="title">
-                    <i class="ri-customer-service-2-fill"></i> <strong>상담신청</strong>
-                        <span>신용점수에 반영이 안 되는 안심한도조회 (24시간 상담 가능)</span>
-                    </div>
-
-                    <div class="inputBox">
-                        <input type="text" name="name" placeholder="이름">
-                        <input type="number" placeholder="연락처" name="tel" id="tel" class="numberOnly" minlength="11" maxlength="11" required oninput="maxLengthCheck(this)">
-                        <button id="fsubmit" class="btn eveSubmitBtn">상담신청</button>
-                    </div>
-
-                    <div class="check"><input name="policy" type="checkbox">개인정보 수집·이용·제공 동의 <span class="privacy">자세히보기</span></div>
-
-                </form>
-        </div><!-- bottomFixedForm -->
+        <form name="festimate" method="post" autocomplete="off" enctype="multipart/form-data">
+            <input type="hidden" name="ips" value="100.100.100.100">
+            <input type="hidden" name="site_name" value="truebest.co.kr">
+            <input type="hidden" name="path" value="1">
+            <input type="hidden" name="reco" value="●한투">
+            <input type="hidden" name="num" value="">
+            <input type="hidden" name="phone" value="">
+    
+            <div class="title">
+            <i class="ri-customer-service-2-fill"></i> <strong>상담신청</strong>
+                <span>신용점수에 반영이 안 되는 안심한도조회 (08시~21시 상담 가능)</span>
+            </div>
+    
+            <div class="inputBox">
+                <input type="text" name="name" placeholder="이름">
+                <input type="tel" value="010" id="tel1" name="tel1" class="num01" readonly>
+                <input type="number" placeholder="연락처" name="tel" id="tel" class="numberOnly" minlength="8" maxlength="8" required oninput="maxLengthCheck(this)">
+                <button id="fsubmit" class="btn eveSubmitBtn">상담신청</button>
+            </div>
+    
+            <div class="check"><input name="policy" type="checkbox">개인정보 수집·이용·제공 동의 <span class="privacy">자세히보기</span></div>
+    
+        </form>
+    </div><!-- bottomFixedForm -->
 
     <section class="credit01">
 
