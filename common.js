@@ -32,7 +32,7 @@ $.ajax({
         alert(response);
     },
     error: function(xhr, status, error) {
-        alert(status);
+        alert(error);
     }
 });
 
