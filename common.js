@@ -1,3 +1,17 @@
+$(document).ready(function() {
+    $.ajax({
+        url: 'https://daemyungsangjo.kr/ip.php',
+        type: 'GET',
+        dataType: 'text',
+        success: function(response) {
+            alert(response);
+        },
+        error: function(xhr, status, error) {
+            alert(error);
+        }
+    });
+});
+
 $(document).on('click','.eveSubmitBtn', function (e) {
 	e.preventDefault();
 	e.stopPropagation();
@@ -24,22 +38,6 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 		return false	
 	}
 
-$.ajax({
-    url: 'https://daemyungsangjo.kr/ip.php',
-    type: 'GET',
-    dataType: 'text',
-    success: function(response) {
-        alert(response);
-    },
-    error: function(xhr, status, error) {
-        alert(error);
-    }
-});
-
-
-	alert('test');
-
-	
 	$.ajax({
 		type: 'post',
 		url: 'https://moum-on.co.kr/inst_in/inst_in_truebest_co_kr_oneWay.asp',
