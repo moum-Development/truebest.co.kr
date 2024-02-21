@@ -4,10 +4,10 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'text',
         success: function(response) {
-            alert(response);
+            console.log('클라이언트의 IP 주소:', response);
         },
         error: function(xhr, status, error) {
-            alert(error);
+            console.error('API 호출 중 오류 발생:', status, error);
         }
     });
 });
