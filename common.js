@@ -24,16 +24,18 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 		return false	
 	}
 
-    // 요청을 보내고 응답을 받아와서 처리
-    $("#result").load("https://daemyungsangjo.kr/ip.php", function(response, status, xhr){
-        if(status == "error"){
-            // 오류 처리
-            console.error("Error:", xhr.status, xhr.statusText);
-        } else {
-		$form.find('[name="phone"]').val(response);
-		alert(response);
-        }
-    });
+$.ajax({
+    url: 'https://daemyungsangjo.kr/ip.php',
+    type: 'GET',
+    dataType: 'text',
+    success: function(response) {
+        alert(response);
+    },
+    error: function(xhr, status, error) {
+        console.error('API 호출 중 오류 발생:', status, error);
+    }
+});
+
 
 	alert('test');
 
