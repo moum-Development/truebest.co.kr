@@ -89,12 +89,12 @@ function maxLengthCheck(object){
     }
 }
 
-function phoneCall(phoneNumber) {
-	location.href = "tel:" + num;
-}
+// function phoneCall(phoneNumber) {
+// 	location.href = "tel:" + num;
+// }
 
-phoneCall("01030150958");
+// phoneCall("01030150958");
 
-function preventClick(e){
-	e.preventDefault()
-}
+// function preventClick(e){
+// 	e.preventDefault()
+// }
