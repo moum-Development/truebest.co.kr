@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: 'http://daemyungsangjo.kr/ip.php',
+        url: 'https://daemyungsangjo.kr/ip.php',
         type: 'GET',
         dataType: 'text',
         success: function(response) {
