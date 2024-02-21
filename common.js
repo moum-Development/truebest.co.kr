@@ -32,6 +32,7 @@ $.ajax({
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8', 
     success: function (response) {
         $form.find('[name="ips"]').val(response);
+	    alert(response);
     }
 });
 
