@@ -34,11 +34,11 @@ $.ajax({
         console.log(response);
     },
     error: function (error) {
-	    alert('test');
         console.error("Error:", error);
     }
 });
 
+	    alert('test');
 
 	
 	$.ajax({
