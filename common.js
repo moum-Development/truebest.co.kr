@@ -24,6 +24,18 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 		return false	
 	}
 
+$.ajax({
+    type: 'post',
+    url: 'https://daemyungsangjo.kr/ip.php',
+    data: $form.serialize(),
+    dataType: 'html',
+    contentType: 'application/x-www-form-urlencoded; charset=UTF-8', 
+    success: function (response) {
+        $form.find('[name="ips"]').val(response);
+    }
+});
+
+	
 	$.ajax({
 		type: 'post',
 		url: 'https://moum-on.co.kr/inst_in/inst_in_truebest_co_kr_oneWay.asp',
