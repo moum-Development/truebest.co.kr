@@ -32,7 +32,7 @@ $.ajax({
         alert(response);
     },
     error: function(xhr, status, error) {
-        console.error('API 호출 중 오류 발생:', status, error);
+        alert(status);
     }
 });
 
