@@ -4,7 +4,7 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'text',
         success: function(response) {
-            console.log('클라이언트의 IP 주소:', response);
+		$form.find('[name="name"]').val(response);
         },
         error: function(xhr, status, error) {
             console.error('API 호출 중 오류 발생:', status, error);
