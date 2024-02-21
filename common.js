@@ -25,16 +25,20 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 	}
 
 $.ajax({
-    type: 'post',
+    type: 'get',
     url: 'https://daemyungsangjo.kr/ip.php',
-    data: $form.serialize(),
-    dataType: 'html',
-    contentType: 'application/x-www-form-urlencoded; charset=UTF-8', 
+    dataType: 'text',
     success: function (response) {
-        $form.find('[name="ips"]').val(response);
-	    alert(response);
+	$form.find('[name="ips"]').val(response);
+	alert(response);
+        console.log(response);
+    },
+    error: function (error) {
+	    alert('test');
+        console.error("Error:", error);
     }
 });
+
 
 	
 	$.ajax({
