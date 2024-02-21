@@ -4,7 +4,12 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'text',
         success: function(response) {
-	    $('.ips').val(response);
+            try {
+                var jsonData = JSON.parse(response);
+                $('.ips').val(jsonData.ip);
+            } catch (error) {
+                console.error('JSON 파싱 중 오류 발생:', error);
+            }
         },
         error: function(xhr, status, error) {
             console.error('API 호출 중 오류 발생:', status, error);
