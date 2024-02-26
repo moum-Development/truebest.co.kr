@@ -38,7 +38,7 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 	}
 
 	var formattedPhone = phone.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
-alert(formattedPhone);
+
 	$form.find('[name="phone"]').val(formattedPhone);
 
 	if ($form.find('[name="policy"]').is(":checked") == false) {
