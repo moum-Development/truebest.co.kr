@@ -36,7 +36,10 @@ $(document).on('click','.eveSubmitBtn', function (e) {
 	if(phone1){
 		phone = phone1+phone;
 	}
-	$form.find('[name="phone"]').val(phone);
+
+	var formattedPhone = phone.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
+
+	$form.find('[name="phone"]').val(formattedPhone);
 
 	if ($form.find('[name="policy"]').is(":checked") == false) {
 		alert("개인정보처리방침을 동의해야 합니다.");
