@@ -3,6 +3,14 @@ a{text-decoration: none; color: inherit;}
 ul, li{list-style-type: none;}
 img{display: block;}
 
+.radius4 {
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-ms-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+}
+
 .inner{width: 1400px; margin: 0 auto; position: relative;}
 
 #pop { display:none; position:fixed; z-index:1000; background-color:rgba(0,0,0,0.7); top:0; left:0; width:100%; height:100%; text-align:center; z-index: 9999999;}
@@ -55,6 +63,7 @@ header .call-number{background-color: #532f09; color: #fff; padding: 10px 20px; 
 .bottomFixedForm form .title span{font-weight: 600; font-size: .8rem; color: #555;}
 .bottomFixedForm form .inputBox{ margin-bottom: 10px;}
 .bottomFixedForm form .inputBox input{border:2px solid #d2d2d2; width: 150px; border-radius: 10px; padding: 10px;}
+.bottomFixedForm form .inputBox select{border:2px solid #d2d2d2; width: 70px; border-radius: 10px; padding: 8px;}
 .bottomFixedForm form .inputBox input.num01{width: 25px;}
 .bottomFixedForm form .inputBox button{
 margin-left: 8px;
@@ -89,6 +98,8 @@ background: linear-gradient( to bottom, #4c2f09, #683209 );
 .main-slide .swiper-slide .title .main-txt{font-size: 2.7rem; font-weight: 900;}
 .main-slide .swiper-slide .hastag{margin: 20px 0}
 .main-slide .swiper-slide .hastag span{display: inline-block; background-color: #fff; border-radius: 30px; padding: 5px 10px; font-weight: 900; font-size: 1rem;}
+.main-slide .swiper-slide.job .hastag{width: 100%;}
+.main-slide .swiper-slide.job .hastag span{display: block; width: 170px; text-align: center;}
 .main-slide .swiper-slide .sub-title{font-weight: 900; font-size: 1.2rem; line-height: 2;}
 .main-slide .swiper-slide img{position: absolute; height: 300px;}
 .main-slide .swiper-slide.apartment img{right: -180px; bottom: -70px; height: 200px;}
@@ -154,7 +165,7 @@ background: linear-gradient( to bottom, #4c2f09, #683209 );
 #sub-wrap .subInfoBox .infoList .proList img{height: 45px; margin-bottom: 20px;}
 #sub-wrap .subInfoBox .infoList .proList .main-txt{font-weight: 600;}
 #sub-wrap .subInfoBox .infoList .proList .sub-txt{font-weight: 600; margin-bottom: 10px; color: #333; font-size: 1rem; width: 200px;}
-
+#sub-wrap .subInfoBox .infoList .proList .sub-txt span{font-size: .7rem;}
 
 .mob-content{display: none;}
 

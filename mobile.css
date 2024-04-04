@@ -63,7 +63,7 @@
     .mob-content .proList a{border-right: 1px solid #eee;}
     .mob-content .proList a:last-child{border-right: none;}
     .mob-content .proList .content{padding: 20px; position: relative; height: 150px; width: 180px;}
-    .mob-content .proList .content .title{font-size: .9rem; width: 75%; padding-left: 10px;}
+    .mob-content .proList .content .title{font-size: .9rem; width: 75%; padding-left: 10px; line-height: 1.4;}
     .mob-content .proList .content img{height: 50px; position: absolute; right: 20px;bottom: 10px;}
     .mob-content .proList .content:last-child img{right: 40px;}
 
@@ -108,6 +108,7 @@
     .productInfo .title{text-align: center; margin: 0 auto; font-size: 1.1rem;}
     .productInfo .infoBox{width: 90%; margin: 0 auto; height: 400px;   flex-wrap: wrap;}
     .productInfo .infoBox .infoList{width: 100%; text-align: center;}
+    .productInfo .infoBox .infoList .info{font-size: .8rem;}
     .more-info{float: none !important; width: 90% !important; height: 500px; margin: 0 auto; display: block; justify-content: center; margin-top: 50px; padding-top: 20px;}
     .more-info table{width: 100%;}
     .more-info table tr{font-size: .65rem; color: #505050; font-weight: 600;}
@@ -115,8 +116,8 @@
     .more-info table tr td{width: 60%; line-height: 1.4;}
 
     
-    .notice{margin-top: 50px;}
-    .notice .title{font-size: 1rem; margin: 0 auto; display: block; padding: 30px 0; margin-top: 100px;}
+    .notice{margin-top: 0px; padding: 20px 0;}
+    .notice .title{font-size: 1rem; margin: 0 auto; display: block; padding: 30px 0; margin-top: 160px;}
     .notice .noticeList{width: 100%;}
     .notice .noticeList ul{padding: 20px; width: 100%; box-sizing: border-box;}
     .notice .noticeList ul li{font-size: .6rem !important; color: #888;}
@@ -134,12 +135,13 @@
     .bottomFixedForm form .title i{font-size: 1.1rem;}
     .bottomFixedForm form .title span{display: block; font-size: .7rem;}
     .bottomFixedForm form .inputBox{margin-bottom: 7px;}
-    .bottomFixedForm form .inputBox input{margin: 3px 0; width: 105px;}
+    .bottomFixedForm form .inputBox input{width: 105px;}
     .bottomFixedForm form .inputBox input.num01{width: 50px;}
     .bottomFixedForm form .inputBox button{width: 100px; padding: 5px !important; margin-top: 4px;}
     .bottomFixedForm form .check{font-size: .8rem; display: flex; align-items: center; justify-content: center;}
     .bottomFixedForm form .check input{margin-right: 5px;}
     .bottomFixedForm form .inputBox button{font-size: 1rem; margin-left: 0; padding: 10px;}
+
     .bottomFixedForm form .check span{display: inline-block; text-decoration: underline; margin-left: 5px; font-size: .8rem;}
 
 
