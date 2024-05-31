@@ -10,15 +10,6 @@
     </script>
     <!-- AceCounter Log Gathering Script End -->
 
-    <!-- NAVER SCRIPT -->
-    <script type='text/javascript' src='//wcs.naver.net/wcslog.js'></script> 
-    <script type='text/javascript'> 
-    if (!wcs_add) var wcs_add={};
-    wcs_add['wa'] = 's_3ee908f87c4a';
-    if (!_nasa) var _nasa={};
-    _nasa['cnv'] = wcs.cnv('4','0'); 
-    wcs_do(_nasa);
-    </script>
 
     <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 --> 
     <script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script> 
@@ -83,7 +74,7 @@
 
 
             <div class="call-number">
-                <a href="#" onMouseDown="javascript:_PL('https://truebest.co.kr/process.html');"></a><i class="ri-phone-fill"></i> 010-3015-0958
+                <a href="tel:010-3015-0958" onMouseDown="javascript:_PL('https://truebest.co.kr/process.html');"></a><i class="ri-phone-fill"></i> 010-3015-0958
             </div>
         </div>
 
@@ -479,9 +470,24 @@
             심의번호 : 한국투자저축은행 준법감시인 심의필 제2024-0019호(2024.02.01~2025.01.31)
         </p>        
     </footer>    
+
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script> 
+    <script type="text/javascript">     
+    if (!wcs_add) 
+    var wcs_add = {}; 
+    wcs_add["wa"] = "s_XXXX"; 
+    if (!_nasa) 
+    var _nasa = {}; 
+    if (window.wcs) { 
+    wcs.inflow("파라미터");  
+    wcs_do(_nasa);  
+    } 
+    </script> 
     
-    
+
     <script>
+
+        
         
         new Swiper('.main-slide.swiper-container', {
                 autoplay: true,
@@ -523,11 +529,11 @@
     })
 
         
-
+    
 
 
     </script>
-<div id="result"</div>
+<div id="result"></div>
 </body>
 
 </html>

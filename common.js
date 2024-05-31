@@ -106,16 +106,11 @@ function maxLengthCheck(object){
     }
 }
 
-function phoneCall(phoneNumber) {
-	location.href = "tel:" + num;
+// function phoneCall(phoneNumber) {
+// 	location.href = "tel:" + num;
 
-	if (!wcs_add) var wcs_add={};
-	wcs_add['wa'] = 's_3ee908f87c4a';
-	if (!_nasa) var _nasa={};
-	_nasa['cnv'] = wcs.cnv('5','0'); 
-	wcs_do(_nasa);
 
-}
+// }
 
 // phoneCall("01030150958");
 
