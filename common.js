@@ -105,15 +105,3 @@ function maxLengthCheck(object){
         object.value = object.value.slice(0, object.maxLength);
     }
 }
-
-// function phoneCall(phoneNumber) {
-// 	location.href = "tel:" + num;
-
-
-// }
-
-// phoneCall("01030150958");
-
-// function preventClick(e){
-// 	e.preventDefault()
-// }
