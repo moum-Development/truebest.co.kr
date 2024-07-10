@@ -54,6 +54,8 @@
         text-align: center;
     }
 
+    .mob-footer p span{font-size: 11px; color: #969696;}
+
     .sub-wrap{display: none;}
     .main-footer{display: none;}
 

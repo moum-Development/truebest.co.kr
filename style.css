@@ -124,11 +124,11 @@ background: linear-gradient( to bottom, #4c2f09, #683209 );
 .mainSubContent .subListBox .content:hover img{opacity: 1;}
 .mainSubContent .sub-footer{padding: 20px;}
 .mainSubContent .sub-footer ul{padding-left: 50px;}
-.mainSubContent .sub-footer ul li{line-height: 1.4; font-size: .8rem; color: #6b6b6b;}
-.mainSubContent .sub-footer ul li span{display: block; font-weight: 900; font-size: 1rem; margin-bottom: 10px; color: #333;}
+.mainSubContent .sub-footer ul li{line-height: 2; font-size: .8rem; color: #6b6b6b; font-weight: 700;}
 
 .main-footer{padding: 20px; flex-grow: 1; width: 90%; margin: 0 auto;}
 .main-footer p{padding: 40px; text-align: center; font-size: .8rem; line-height: 1.4; color: #8f8f8f;}
+.main-footer p span{font-size: 11px; color: #969696;}
 
 #sub-wrap{width: 0%; position: relative; height: 700px; overflow: hidden; display: flex; }
 #sub-wrap.in{width: 100%;}
