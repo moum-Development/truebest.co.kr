@@ -161,10 +161,10 @@ background: linear-gradient( to bottom, #4c2f09, #683209 );
 #sub-wrap .subInfoBox .infoList .title{font-size: 1rem; font-weight: 900; margin-bottom: 15px;}
 #sub-wrap .subInfoBox .infoList .product{padding: 30px; display: flex; align-items: center; justify-content: space-between;  width: 750px; height: 145px; background-color: #fff; border-radius: 30px; border: 2px solid #c3c3c3;}
 
-#sub-wrap .subInfoBox .infoList .proList{text-align: center; width: 200px; display: flex; flex-wrap: wrap; justify-content: center;}
+#sub-wrap .subInfoBox .infoList .proList{text-align: center; width: 220px; display: flex; flex-wrap: wrap; justify-content: center;}
 #sub-wrap .subInfoBox .infoList .proList img{height: 45px; margin-bottom: 20px;}
 #sub-wrap .subInfoBox .infoList .proList .main-txt{font-weight: 600;}
-#sub-wrap .subInfoBox .infoList .proList .sub-txt{font-weight: 600; margin-bottom: 10px; color: #333; font-size: 1rem; width: 200px;}
+#sub-wrap .subInfoBox .infoList .proList .sub-txt{font-weight: 600; margin-bottom: 10px; color: #333; font-size: 1rem; width: 220px;}
 #sub-wrap .subInfoBox .infoList .proList .sub-txt span{font-size: .7rem;}
 
 .mob-content{display: none;}
